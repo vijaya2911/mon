@@ -48,11 +48,12 @@ class OdcMonitor():
 
 	def run(self):
 		while True:
-			nodeList = self.getNodeInfo()
-			self.logger.info(nodeList)
-			nspaces = self.getNamespace()
-			podList = self.getPodInfo(nspaces)
-			self.logger.info(podList)
+			self.logger.info("Monitor running ...")
+			#nodeList = self.getNodeInfo()
+			#self.logger.info(nodeList)
+			#nspaces = self.getNamespace()
+			#podList = self.getPodInfo(nspaces)
+			#self.logger.info(podList)
 			time.sleep(config["frequency"])
 
 if __name__ == "__main__":
